@@ -126,6 +126,7 @@ int main(int argc, char* argv[])
 	Net = Ptr<Network>(new Network(Callsign("INV")));
 	Net = Ptr<Network>(new Network(cs));
 	cli_simtype("!callsi\bgn\r");
+	cli_clear();
 	cli_simtype("!callsj\bign\r");
 	cli_simtype("!callsign 5\r");
 	cli_simtype("!callsign ABCD\r");

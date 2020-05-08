@@ -310,6 +310,11 @@ void cli_simtype(const char *c)
 	}
 }
 
+void cli_clear()
+{
+	cli_buf = "";
+}
+
 // Telnet IAC is a special sequence sent by a telnet client
 // to configure the server. We don't honor these configurations,
 // but a Telnet client sends them anyway, so they need to be

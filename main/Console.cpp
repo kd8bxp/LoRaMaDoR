@@ -45,11 +45,13 @@ void console_handle()
 void console_telnet_enable()
 {
 	is_telnet = true;
+	cli_clear();
 }
 
 void console_telnet_disable()
 {
 	is_telnet = false;
+	cli_clear();
 }
 
 // Receive typed character from Telnet socket
